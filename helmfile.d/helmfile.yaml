@@ -1,0 +1,8 @@
+#This code is from ChatGPT
+releases:
+  - name: yarowa
+    namespace: default
+    chart: ../helmchart
+    values:
+      - ../helmchart/values.yaml
+      

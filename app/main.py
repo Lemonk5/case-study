@@ -1,10 +1,11 @@
+ #All information I found in Youtube and Stack overflow
 from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
-
-def hello():
+@app.route('/', defaults={'path': ''}) #ChatGPT
+@app.route('/<path:path>')  #ChatGPT
+def hello(path):
     return "Hello Yarowa AG!!!"
 
 
